@@ -7,3 +7,12 @@
   --destaque-inverso
   --fundo-card
 */
+
+@charset "UTF-8";
+
+body {
+    background-color: rgb(229, 224, 252);
+}
+ header > h1 {
+  color: black;
+}
