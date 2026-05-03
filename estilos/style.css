@@ -114,3 +114,75 @@ div#social a {
 div#social a:hover {
     color: var(--destaque-inverso);
 }
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article h2 {
+  color: var(--destaque);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  
+}
+
+.video-container iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#skill-container .nome{ 
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#skill-container .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skill-container .barra {
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+ 
+}
+
+#skill-container .barra .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
