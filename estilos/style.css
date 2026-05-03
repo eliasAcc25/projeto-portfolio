@@ -123,7 +123,7 @@ article h2 {
   color: var(--destaque);
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -186,3 +186,37 @@ article h2 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-left: 5px solid var(--destaque-inverso);
+  border-radius: 8px;
+  padding-left: 16px;
+  transition: border-width 1s, border-color 1s;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 20px;
+  transition: border-left-width 1s, border-color 1s;
+  cursor: pointer;
+  border-color: var(--destaque);
+}
+
+#formacao-container .periodo {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+    color: var(--destaque-inverso);
+    font-size: 1.1em;
+}
+
