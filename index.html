@@ -25,12 +25,12 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-medapps"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-diagram-project"></i></a></li>
-                <li><a href="#"><i class="fa-regular fa-moon"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-power-off"></i></a></li>
+                <li><a href="#ficha" class:"link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class:"link"><i class="fa-brands fa-medapps"></i></a></li>
+                <li><a href="#formacao" class:"link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class:"link"><i class="fa-solid fa-diagram-project"></i></a></li>
+                <li><a href="#" id:"botao-tema"><i class="fa-regular fa-moon"></i></a></li>
+                <li><a href="#" class:"link"><i class="fa-solid fa-power-off"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +46,8 @@
                 <a href="https://www.linkedin.com/in/elias-andre-2a6090a6/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href="https://github.com/eliasAcc25" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
                 <a href="https://www.instagram.com/elias_sw.eng/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.youtube.com/@cursoemvideo" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>  
+                <a href="https://www.youtube.com/@cursoemvideo" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://wa.me/5511988532639" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </section>
         <section id="detalhes">
@@ -209,39 +210,104 @@
 
                         <div class="curso">
                             <p class="periodo">
+                                <i class="fa-solid fa-calendar-days"></i> Julho 2024
+                                <h3 class="instituicao">Moovi</h3>
+                                <P class="titulacao">SAP Certified Development Specialist - ABAP for SAP HANA 2.0</P>
+                            </p>
+                        </div>
+
+                        <div class="curso">
+                            <p class="periodo">
+                                <i class="fa-solid fa-calendar-days"></i> Novembro 2024
+                                <h3 class="instituicao">Skillsoft</h3>
+                                <P class="titulacao">Test Automation: Automated Software Testing</P>
+                            </p>
+                        </div>
+
+                        <div class="curso">
+                            <p class="periodo">
                                 <i class="fa-solid fa-calendar-days"></i> 2026 Andamento
                                 <h3 class="instituicao">USP/Esalq</h3>
                                 <P class="titulacao">MBA-Engenharia de Software</P>
                             </p>
                         </div>
-                        
+
+                    </div> <!-- Fim formacao-container -->
             </article> <!-- Fim formacao-->
 
             <article id="projetos">
                 <h2><i class="fa-solid fa-chart-gantt"></i> Meus Projetos</h2>
-                <div class="projetos-container">
-                    <div class="projeto">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div id="projeto-container">
+                    <div class="projeto"> <!-- Uol-->
+                       <img src="imagens/Uol.webp" alt="Projeto 1">
+                       <div class="projeto-info">
+                        <p class="periodo">2021</p>
+                        <h3 class="titulo">Chatbot Developer</h3>
+                        <p>Atuação em diversos projetos de desenvolvimento de chatbots, integrando soluções de inteligência artificial e automação de atendimento.</p>
+                        <details class="descricao">
+                            <summary>Saiba mais</summary>
+                            <p>Desenvolvendo Chatbots com Blip para diversos clientes, Toro Investimentos, Itaú, Conta Azul, Mercado Pago, Oi, participação em diversos cenários de desenvolvimento, desde o início do projeto até a entrega.
+
+                        Desenvolvimento de fluxos, sustentação, análises de dados, correções de bugs, melhorias, integrações de AI, integração de canais de atendimento como WhatsApp, Blip Desk, experiência com a ferramenta UX Figma.
+                    
+                        Desenvolvimento de Chatbot, utilizando IBM WATSON, para um banco via WhatsApp, atuando com curadoria, análises de dados, melhorias contínuas  do canal de atendimento, fazendo integrações, atuando no desenvolvimento de um canal específico de pagamento via PIX.</p>
+                        </details>
+                       </div>
                     </div>
 
-                    <div class="projeto">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="projeto"> <!-- IBM-->
+                       <img src="imagens/IBM.webp" alt="Projeto 1">
+                       <div class="projeto-info">
+                        <p class="periodo">2022</p>
+                        <h3 class="titulo">Backend Developer</h3>
+                        <p>Atuação em projetos para a Petrobras, desenvolvendo um assinador digital da Adobe Sign, integrando upload/download de documentos.</p>
+                        <details class="descricao">
+                            <summary>Saiba mais</summary>
+                            <p>Atuação em projetos para a Petrobras, desenvolvendo um assinador digital da Adobe Sign, integrando upload/download de documentos.
+                        Utilizando tecnologias como:
+                        Java 8 e 11
+                        Spring Boot
+                        AWS
+                        Microsserviços
+                        Junit 5
+                        mockito</p>
+                        </details>
+                       </div>
                     </div>
 
-                    <div class="projeto">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição do projeto 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="projeto"> <!-- Accenture-->
+                       <img src="imagens/accenture.webp" alt="Projeto 1">
+                       <div class="projeto-info">
+                        <p class="periodo">2023 Atual</p>
+                        <h3 class="titulo">Custom Software Engineering Analyst</h3>
+                        <p>Atuação em diversos projetos com segmentos bancários, desenvolvendo novas features</p>
+                        <details class="descricao">
+                            <summary>Saiba mais</summary>
+                            <p>Atualmente expandindo atuação em iniciativas de transformação digital com Adobe Experience Manager (AEM), contribuindo para projetos de experiência digital e gestão de conteúdo corporativo.
+                            Anteriormente, atuei junto ao time de produtos em soluções financeiras, desenvolvendo novas features para plataformas de gestão e automação de processos, aplicando:
+
+                            - Java, Quarkus, Hexagonal Architecture, AWS, Hibernate, Panache, JUnit, Sonar
+                            - Boas práticas de arquitetura e qualidade de software
+                            - Construção de soluções escaláveis e de alta performance</p>
+                        </details>
+                       </div>
                     </div>
 
+                </div> <!-- Fim projeto-container -->
             </article> <!-- Fim projetos-->
 
         </section>
     </main>
 
     <footer>
-
+        <p>&copy; 2026 Elias Silva. Todos os direitos reservados.</p>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/elias-andre-2a6090a6/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+            
+            <a href="https://github.com/eliasAcc25" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            
+            <a href="https://wa.me/5511988532639" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
     </footer>
 
     <script src="scripts/script.js"></script>
