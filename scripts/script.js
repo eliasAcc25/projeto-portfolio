@@ -22,7 +22,23 @@ botao.addEventListener('click', () => {
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
-// Scroll suave para links de navegação
+// Modal de despedida
+const botaoDespedida = document.getElementById('botao-despedida');
+const modal = document.getElementById('modal-despedida');
+const modalFechar = document.getElementById('modal-fechar');
+
+botaoDespedida.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.add('ativo');
+});
+
+modalFechar.addEventListener('click', () => {
+  modal.classList.remove('ativo');
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) modal.classList.remove('ativo');
+});
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {

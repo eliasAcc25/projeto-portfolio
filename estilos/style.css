@@ -25,11 +25,21 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso:#a73917;
+  --fundo-card: #444444;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+    transition: background-color 0.5s, color 0.5s;
 }
 
  header {
@@ -127,25 +137,6 @@ article h2 {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-}
-
-.video-container {
-  position: relative;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-
-  
-}
-
-.video-container iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-
 }
 
 #skill-container {
@@ -299,4 +290,67 @@ footer #social a {
 
 footer #social a:hover {
   color: var(--destaque-inverso);
+}
+
+/* Modal de despedida */
+#modal-despedida {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-despedida.ativo {
+  display: flex;
+}
+
+#modal-conteudo {
+  background-color: var(--fundo-card);
+  color: var(--texto);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#modal-conteudo h2 {
+  color: var(--destaque);
+}
+
+#modal-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2em;
+}
+
+#modal-social a {
+  color: var(--destaque);
+  transition: color 0.5s;
+}
+
+#modal-social a:hover {
+  color: var(--destaque-inverso);
+}
+
+#modal-fechar {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#modal-fechar:hover {
+  background-color: var(--destaque-inverso);
 }
